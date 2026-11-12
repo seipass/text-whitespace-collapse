@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-whitespace-collapse"
+version = "1.0.0"
+description = "Collapse runs of whitespace to single spaces."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+text-whitespace-collapse = "text_whitespace_collapse:main"
+
+[tool.setuptools]
+py-modules = ["text_whitespace_collapse"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
